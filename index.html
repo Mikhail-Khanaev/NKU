@@ -36,10 +36,10 @@
                 </div>
                 <nav class="menu__body">
                     <ul class="menu__list">
-                        <li><a href="#" class="menu__link" data-goto=".">О компании</a></li>
-                        <li><a href="#" class="menu__link" data-goto=".">Проекты</a></li>
-                        <li><a href="#" class="menu__link" data-goto=".">Отзывы</a></li>
-                        <li><a href="#" class="menu__link" data-goto=".">Контакты</a></li>
+                        <li><a href="#" class="menu__link" data-goto=".about">О компании</a></li>
+                        <li><a href="#" class="menu__link" data-goto=".projects">Проекты</a></li>
+                        <li><a href="#" class="menu__link" data-goto=".reviews">Отзывы</a></li>
+                        <li><a href="#" class="menu__link" data-goto=".contacts">Контакты</a></li>
                     </ul>
                     <div class="menu__contacts">
                         <a href="mailto:info@nku.su" class=" menu__link">info@nku.su</a>
@@ -334,9 +334,9 @@
                                         <div class="file__item">
                                             <input accept=".jpg, .png, .gif" id="formImage" type="file" name="image"
                                                 class="file__input">
-                                            <div class="file__button">Прикрепить проект</div>
+                                            <div class="file__button icon-7">Прикрепить проект</div>
                                         </div>
-                                        <div class="file__preview"></div>
+                                        <div id="formPreview" class="file__preview"></div>
                                     </div>
                                 </div>
 
@@ -358,9 +358,42 @@
             <section class="contacts padding">
                 <div class="contacts__container container">
                     <div class="contacts__inner">
+
                         <div class="contacts__title title anim-item anim-no-hide">
                             <h2 class="anim-item anim-no-hide">контакты</h2>
+                            <div class="title-text contacts-text anim-item anim-no-hide">
+                                <a href="tel:+79164441159"><span>Телефон:</span> +7-916-444-11-59</a>
+                                <a href="mailto:info@nku.su"><span>E-mail:</span> info@nku.su</a>
+                                <address>
+                                    <span>Адрес:</span> г. Москва, ул. Маршала Захарова, д.23
+                                </address>
+                            </div>
                         </div>
+
+                        <div class="contacts__map">
+                            <script type="text/javascript" charset="utf-8" async
+                                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A988dd7156047b470276048e8b42dd252b345c732a8143bd0cd869f28db954ee4&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+                        </div>
+
+                        <div class="contacts__info">
+                            <h4 class="contacts__info-subtitle">Реквизиты</h4>
+                            <div class="contacts__info-text">
+                                <ul class="contacts__info-list">
+                                    <li>ООО «НКУ»</li>
+                                    <li>Юр. адрес: 115582, г. Москва, б-р Ореховый, д. 14,
+                                        корп. 1, 374</li>
+                                    <li>ОГРН: 1187746358238</li>
+                                    <li>ИНН: 7724435224</li>
+                                    <li>КПП: 772401001</li>
+                                    <li>Банк: Филиал "ЦЕНТРАЛЬНЫЙ" Банка ВТБ ПАО Г. МОСКВА
+                                    </li>
+                                    <li>БИК: 044525411</li>
+                                    <li>Р/с: 40702810501970001168</li>
+                                    <li>К/с: 30101810145250000411</li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -380,9 +413,32 @@
         </div>
     </div>
 </div><footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__inner">
 
-</footer>
+            <a href="#" class="header__logo footer__logo">
+                <picture>
+                    <source srcset="img/logo.webp" type="image/webp">
+                    <img src="img/logo.png" alt="">
+                </picture>
+            </a>
+
+            <div data-da=".footer__inner,767,first" class="footer__nav">
+                <ul class="footer-menu__list">
+                    <li><a href="#" class="footer-menu__link" data-goto=".about">О компании</a></li>
+                    <li><a href="#" class="footer-menu__link" data-goto=".projects">Проекты</a></li>
+                    <li><a href="#" class="footer-menu__link" data-goto=".reviews">Отзывы</a></li>
+                    <li><a href="#" class="footer-menu__link" data-goto=".contacts">Контакты</a></li>
+                </ul>
+            </div>
+
+            <a href="#" class="button footer__button">
+                Оставить заявку
+            </a>
+
+        </div>
     </div>
+</footer>    </div>
     <script src="https://unpkg.com/swiper@7.0.0/swiper-bundle.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
 </body>
